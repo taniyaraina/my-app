@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import 'bulma/css/bulma.css';
 
 const mainBrandColor = '#D3A265';
 const lightShades = '#FDFBF8';
