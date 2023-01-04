@@ -51,6 +51,12 @@ const GlobalStyle = createGlobalStyle`
   .border {
     border: 2.5px solid ${theme.primaryColor};
   }
+  .bgLight {
+    background-color : ${theme.backgroundSecondaryColor};
+  }
+  .textPrimary {
+    color : ${theme.primaryColor};
+  }
 `
 
 export { GlobalStyle }
