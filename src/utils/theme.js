@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
-const mainBrandColor = '#D3A265';
-const lightShades = '#FDFBF8';
-const darkAccent = '#726699';
-const darkShades = '#3D3737';
+const mainBrandColor = '#D3A265'
+const lightShades = '#FDFBF8'
+const darkAccent = '#726699'
+const darkShades = '#3D3737'
 
 const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -37,9 +37,9 @@ const theme = {
   primaryFontFamily: "'Lora', serif",
   secondaryFontFamily: "'Libre Baskerville', serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
-};
+}
 
-export default theme;
+export default theme
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -48,6 +48,9 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.03rem !important;
     font-size: 17px;
   }
-`;
+  .border {
+    border: 2.5px solid ${theme.primaryColor};
+  }
+`
 
-export { GlobalStyle };
+export { GlobalStyle }
