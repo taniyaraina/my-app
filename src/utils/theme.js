@@ -57,6 +57,12 @@ const GlobalStyle = createGlobalStyle`
   .textPrimary {
     color : ${theme.primaryColor};
   }
+  .textLite {
+    color : ${theme.textColorLite};
+  }
+  .textSecondaryColor {
+    color : ${theme.textColor};
+  }
 `
 
 export { GlobalStyle }
