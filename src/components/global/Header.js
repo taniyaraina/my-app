@@ -24,7 +24,7 @@ const Header = () => (
       className="mx-auto max-w-7xl px-4 sm:px-6 lg:pl-16 lg:pr-24"
       aria-label="Top"
     >
-      <div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">
+      <div className="flex w-full items-center justify-between border-b border-indigo-500 py-8 lg:border-none">
         <div className="flex items-center">
           <Link href="#">
             <span className="sr-only">Your Company</span>
