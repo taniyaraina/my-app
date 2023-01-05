@@ -1,16 +1,13 @@
 import React from 'react'
+import Heading from '../atoms/Heading'
 
 const About = () => (
   <div>
     <div className="bgLight">
       <div className="mx-auto max-w-7xl py-16 px-20 sm:py-20 sm:px-6 lg:flex lg:justify-around lg:px-20">
         <div className="max-w-xl w-1/2">
-          <h2 className="text-4xl mb-1 font-normal tracking-tight sm:text-5xl lg:text-5xl">
-            About{' '}
-          </h2>
-          <h2 className="textPrimary text-4xl font-normal tracking-tight sm:text-5xl lg:text-5xl">
-            Studio{' '}
-          </h2>
+          <Heading>About</Heading>
+          <Heading textColor>Studio</Heading>
         </div>
         <div className="w-8/12">
           <p className="text-base pb-10 leading-loose">

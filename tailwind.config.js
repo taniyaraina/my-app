@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primaryColor: '#D3A265',
         darkBlack: '#383636',
         grayLight: ' #706C6D',
         darkPink: '#D150E5',
@@ -21,6 +22,12 @@ module.exports = {
         extraLarge: '65px',
         medium: '25px',
         large: '45px',
+      },
+      minHeight: {
+        mh: '158px',
+      },
+      borderRadius: {
+        br: '10px',
       },
     },
   },

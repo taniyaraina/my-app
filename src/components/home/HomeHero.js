@@ -1,4 +1,6 @@
 import react from 'react'
+import Image from 'next/image'
+import Button from '../atoms/Button'
 
 const HomeHero = () => (
   <main className="lg:relative">
@@ -11,21 +13,16 @@ const HomeHero = () => (
           Our team creates comfortable spaces for our clients. We’ve been
           designing your everyday life and work through great ideas since 1999.
         </p>
-        <div className="mt-12 borderColor sm:flex sm:justify-center lg:justify-start">
-          <a
-            href="#"
-            className="border uppercase rounded-lg border px-8 py-3 text-base font-bold	md:py-4 md:px-10 md:text-lg"
-          >
-            Get started
-          </a>
-        </div>
+        <Button textAlign>Get Started</Button>
       </div>
     </div>
     <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
-      <img
+      <Image
         className="absolute inset-0 h-full w-full object-cover"
         src="/images/home-hero-image.png"
         alt=""
+        height={750}
+        width={705}
       />
     </div>
   </main>

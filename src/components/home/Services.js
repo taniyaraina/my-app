@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import Heading from '../atoms/Heading'
+import Button from '../atoms/Button'
+import Head from 'next/head'
 
 const features = [
   {
@@ -29,15 +33,23 @@ const features = [
 const Services = () => (
   <div className="py-20 sm:py-24 lg:py-32">
     <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-20">
-      <h2 className="text-4xl font-normal tracking-tight sm:text-5xl lg:text-5xl">
-        Our <span className="pl-2 textPrimary">Services</span>
-      </h2>
-      <dl className="grid mt-16 grid-cols-1 gap-16 lg:grid lg:grid-cols-4">
+      <Heading>
+        Our <span className="textPrimary">Services</span>
+      </Heading>
+      <dl className="grid mt-16 grid-cols-1 gap-12 lg:grid lg:grid-cols-4">
         {features.map((feature) => (
           <div className="text-center" key={feature.name}>
-            <dt className="flex flex-col items-center">
-              <div className="w-24 py-8 text-center">
-                <img className="" src={feature.image} alt="" />
+            <dt className="flex flex-col">
+              <div className="flex items-center justify-center min-h-mh">
+                <div className="w-24 py-8 text-center">
+                  <Image
+                    className=""
+                    src={feature.image}
+                    alt=""
+                    width={95}
+                    height={90}
+                  />
+                </div>
               </div>
               <p className="py-4 uppercase text-lg font-semibold leading-8 tracking-tight textSecondaryColor">
                 {feature.name}
@@ -49,14 +61,7 @@ const Services = () => (
           </div>
         ))}
       </dl>
-      <div className="mt-12 borderColor sm:flex sm:justify-center lg:justify-center">
-        <a
-          href="#"
-          className="border uppercase rounded-lg border px-8 py-3 text-base font-bold	md:py-4 md:px-10 md:text-lg"
-        >
-          Free Consultation
-        </a>
-      </div>
+      <Button>Free Consultation</Button>
     </div>
   </div>
 )

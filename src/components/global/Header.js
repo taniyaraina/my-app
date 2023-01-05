@@ -33,7 +33,7 @@ const Header = () => (
           <div className="ml-10 hidden space-x-8 lg:block">
             {navigation.map((link) => (
               <Link legacyBehavior href={link.href} key={link.name}>
-                <a className="text-base font-medium hover:text-indigo-50">
+                <a className="text-base font-medium hover:text-primaryColor">
                   {link.name}
                 </a>
               </Link>
@@ -43,7 +43,7 @@ const Header = () => (
         <div className="ml-10 space-x-4">
           <a
             href="tel:+(303) 555-0105"
-            className="inline-block py-2 px-4 text-base font-medium"
+            className="inline-block py-2 px-4 text-base font-medium hover:text-primaryColor"
           >
             (303) 555-0105
           </a>

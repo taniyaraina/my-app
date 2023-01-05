@@ -63,6 +63,9 @@ const GlobalStyle = createGlobalStyle`
   .textSecondaryColor {
     color : ${theme.textColor};
   }
+  .bgLightYellow {
+    color: ${theme.lightShades};
+  }
 `
 
 export { GlobalStyle }
