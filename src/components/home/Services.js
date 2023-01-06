@@ -34,7 +34,7 @@ const Services = () => (
   <div className="py-20 sm:py-24 lg:py-32">
     <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-20">
       <Heading>
-        Our <span className="textPrimary">Services</span>
+        Our <span className="colorPrimary">Services</span>
       </Heading>
       <dl className="grid mt-16 grid-cols-1 gap-12 lg:grid lg:grid-cols-4">
         {features.map((feature) => (

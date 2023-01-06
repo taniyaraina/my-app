@@ -48,13 +48,22 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.03rem !important;
     font-size: 17px;
   }
-  .border {
+  .boldBorder {
     border: 2.5px solid ${theme.primaryColor};
+  }
+  .lightBorder {
+    border: 1px solid ${theme.primaryColor};
   }
   .bgLight {
     background-color : ${theme.backgroundSecondaryColor};
   }
-  .textPrimary {
+  .bgLightYellow {
+    background-color: ${theme.lightShades};
+  }
+  .bgDarkYellow {
+    background-color: ${theme.primaryColor};
+  }
+  .colorPrimary {
     color : ${theme.primaryColor};
   }
   .textLite {
@@ -63,9 +72,13 @@ const GlobalStyle = createGlobalStyle`
   .textSecondaryColor {
     color : ${theme.textColor};
   }
-  .bgLightYellow {
-    color: ${theme.lightShades};
+  .lineColor {
+    border-color: #DCD1BB;
   }
+  .borderBottomRightNone{
+    border-bottom-right-radius: 10px;
+  }
+
 `
 
 export { GlobalStyle }

@@ -50,7 +50,7 @@ const Portfolio = () => (
   <div className="py-20 sm:py-24 lg:py-32 bgLight">
     <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-20">
       <Heading textCenter>
-        Our <span className="textPrimary">Portfolio</span>
+        Our <span className="colorPrimary">Portfolio</span>
       </Heading>
       <div className="flex items-center justify-between uppercase pt-16">
         <div className="hidden space-x-9 lg:block">

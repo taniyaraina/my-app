@@ -8,7 +8,7 @@ const Button = ({ children, textAlign }) => (
   >
     <a
       href="#"
-      className="border uppercase rounded-lg border px-8 py-3 text-base font-bold	md:py-4 md:px-10 md:text-lg"
+      className="border uppercase rounded-lg boldBorder px-8 py-3 text-base font-bold	md:py-4 md:px-10 md:text-lg"
     >
       {children}
     </a>

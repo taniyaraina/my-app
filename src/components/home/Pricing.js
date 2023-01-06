@@ -1,52 +1,35 @@
 import react from 'react'
 import Heading from '../atoms/Heading'
+import ReactMarkdown from 'react-markdown'
 
 const pricing = {
   tiers: [
     {
-      title: 'Freelancer',
-      price: 24,
+      title: 'Basic',
+      price: 25,
       frequency: 'per month',
-      description: 'The essentials to provide your best work for clients.',
-      features: [
-        '5 products',
-        'Up to 1,000 subscribers',
-        'Basic analytics',
-        '48-hour support response time',
-      ],
-      cta: 'Monthly billing',
-      mostPopular: false,
+      description:
+        'Interior Design Project Discussion Space Planning Online Consultation',
+      cta: 'Buy Now',
+      bgColor: false,
     },
     {
-      title: 'Startup',
-      price: 32,
+      title: 'Standard',
+      price: 50,
       frequency: 'per month',
-      description: 'A plan that scales with your rapidly growing business.',
-      features: [
-        '25 products',
-        'Up to 10,000 subscribers',
-        'Advanced analytics',
-        '24-hour support response time',
-        'Marketing automations',
-      ],
-      cta: 'Monthly billing',
-      mostPopular: true,
+      description:
+        'Color Analysis \n Space Planning Home Remodeling 3D Interior Model',
+      cta: 'Buy Now',
+      bgColor: true,
     },
     {
-      title: 'Enterprise',
-      price: 48,
+      title: 'Premium',
+      price: 80,
       frequency: 'per month',
-      description: 'Dedicated support and infrastructure for your company.',
-      features: [
-        'Unlimited products',
-        'Unlimited subscribers',
-        'Advanced analytics',
-        '1-hour, dedicated support response time',
-        'Marketing automations',
-        'Custom integrations',
-      ],
-      cta: 'Monthly billing',
-      mostPopular: false,
+      description:
+        'Concept Development Decoration Services Interior Architecture Flooring Installation',
+      cta: 'Buy Now',
+      bgColor: false,
     },
   ],
 }
@@ -60,7 +43,7 @@ const Pricing = () => (
     {' '}
     <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-20">
       <Heading textCenter>
-        Our <span className="textPrimary">Portfolio</span>
+        Our <span className="colorPrimary">Portfolio</span>
       </Heading>
 
       {/* Tiers */}
@@ -68,35 +51,52 @@ const Pricing = () => (
         {pricing.tiers.map((tier) => (
           <div
             key={tier.title}
-            className="relative flex flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-sm"
+            className={`relative flex flex-col rounded-br borderBottomRightNone lightBorder ${
+              tier.bgColor ? 'bgDarkYellow' : 'bgLightYellow'
+            } p-8 shadow-sm`}
           >
             <div className="flex-1">
-              <h3 className="text-2xl font-normal text-gray-900">
+              <h3
+                className={`text-2xl font-normal text-gray-900 ${
+                  tier.bgColor ? 'text-white' : ''
+                }`}
+              >
                 {tier.title}
               </h3>
-              {tier.mostPopular ? (
-                <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-indigo-500 py-1.5 px-4 text-sm font-semibold text-white">
-                  Most popular
-                </p>
-              ) : null}
-              <p className="mt-4 text-gray-900">
-                <span className="text-5xl font-bold">${tier.price}</span>
+              <p className="mt-10 text-gray-900">
+                <span
+                  className={`text-5xl font-bold ${
+                    tier.bgColor ? 'text-white' : ''
+                  }`}
+                >
+                  ${tier.price}
+                </span>
               </p>
               <p className="mt-4 textLite">
-                <span className="ml-1 text-xl font-normal">
+                <span className="ml-1 text-lg font-normal leading-4">
                   {tier.frequency}
                 </span>
               </p>
-              <p className="mt-6 text-gray-500">{tier.description}</p>
+              <div
+                className={`mx-6 my-10 border ${
+                  tier.bgColor ? 'border-white' : 'lineColor'
+                }`}
+              />
+              <ReactMarkdown
+                className={`mt-6 font-medium leading-7 ${
+                  tier.bgColor ? 'text-white' : ''
+                }`}
+                children={tier.description}
+              />
             </div>
 
             <a
               href="#"
               className={classNames(
-                tier.mostPopular
-                  ? 'bg-indigo-500 text-white hover:bg-indigo-600'
-                  : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
-                'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium',
+                tier.bgColor
+                  ? 'bg-white textSecondaryColor'
+                  : 'bgDarkYellow text-white',
+                'mt-8 block w-7/12 py-3 self-center border border-transparent rounded-lg text-center font-bold uppercase',
               )}
             >
               {tier.cta}
