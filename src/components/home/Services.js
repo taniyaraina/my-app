@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Heading from '../atoms/Heading'
 import Button from '../atoms/Button'
-import Head from 'next/head'
+import Container from '../atoms/Container'
 
 const features = [
   {
@@ -31,39 +31,37 @@ const features = [
   },
 ]
 const Services = () => (
-  <div className="py-20 sm:py-24 lg:py-32">
-    <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-20">
-      <Heading>
-        Our <span className="colorPrimary">Services</span>
-      </Heading>
-      <dl className="grid mt-16 grid-cols-1 gap-12 lg:grid lg:grid-cols-4">
-        {features.map((feature) => (
-          <div className="text-center" key={feature.name}>
-            <dt className="flex flex-col">
-              <div className="flex items-center justify-center min-h-mh">
-                <div className="w-24 py-8 text-center">
-                  <Image
-                    className=""
-                    src={feature.image}
-                    alt=""
-                    width={95}
-                    height={90}
-                  />
-                </div>
+  <Container>
+    <Heading>
+      Our <span className="colorPrimary">Services</span>
+    </Heading>
+    <dl className="grid mt-16 grid-cols-1 gap-12 lg:grid lg:grid-cols-4">
+      {features.map((feature) => (
+        <div className="text-center" key={feature.name}>
+          <dt className="flex flex-col">
+            <div className="flex items-center justify-center min-h-mh">
+              <div className="w-24 py-8 text-center">
+                <Image
+                  className=""
+                  src={feature.image}
+                  alt=""
+                  width={95}
+                  height={90}
+                />
               </div>
-              <p className="py-4 uppercase text-lg font-semibold leading-8 tracking-tight textSecondaryColor">
-                {feature.name}
-              </p>
-            </dt>
-            <dd className="text-base leading-8 textLite">
-              {feature.description}
-            </dd>
-          </div>
-        ))}
-      </dl>
-      <Button>Free Consultation</Button>
-    </div>
-  </div>
+            </div>
+            <p className="py-4 uppercase text-lg font-semibold leading-8 tracking-tight textSecondaryColor">
+              {feature.name}
+            </p>
+          </dt>
+          <dd className="text-base leading-8 textLite">
+            {feature.description}
+          </dd>
+        </div>
+      ))}
+    </dl>
+    <Button>Free Consultation</Button>
+  </Container>
 )
 
 export default Services

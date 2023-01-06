@@ -48,7 +48,10 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.03rem !important;
     font-size: 17px;
   }
-  .boldBorder {
+  .lightWhiteBorder {
+    border: 1px solid white;
+  }
+  .semiBoldBorder {
     border: 2.5px solid ${theme.primaryColor};
   }
   .lightBorder {
@@ -56,6 +59,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .bgLight {
     background-color : ${theme.backgroundSecondaryColor};
+  }
+  .bgGrey {
+    background-color :#DFDFDF;
   }
   .bgLightYellow {
     background-color: ${theme.lightShades};
