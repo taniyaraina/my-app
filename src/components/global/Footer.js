@@ -73,7 +73,7 @@ const Footer = () => (
   <footer className="bgLight" aria-labelledby="footer-heading">
     <Container>
       {' '}
-      <div className="xl:grid xl:grid-cols-3">
+      <div className=" flex justify-between">
         <div className="space-y-16 xl:col-span-1 max-w-sm">
           <a href="#">
             {' '}
