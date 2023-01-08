@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Services', href: '/test' },
@@ -28,7 +29,13 @@ const Header = () => (
         <div className="flex items-center">
           <Link href="#">
             <span className="sr-only">Your Company</span>
-            <img className="h-10 w-auto" src="/images/logo.png" alt="" />
+            <Image
+              height={25}
+              width={130}
+              className="h-7 w-auto"
+              src="/images/logo.png"
+              alt=""
+            />
           </Link>
           <div className="ml-10 hidden space-x-8 lg:block">
             {navigation.map((link) => (
