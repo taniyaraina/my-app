@@ -1,6 +1,6 @@
-import react from 'react'
 import Heading from '../atoms/Heading'
 import Container from '../atoms/Container'
+import Markdown from 'react-markdown'
 
 const pricing = {
   tiers: [
@@ -8,8 +8,7 @@ const pricing = {
       title: 'Basic',
       price: 25,
       frequency: 'per month',
-      description:
-        'Interior Design Project Discussion Space Planning Online Consultation',
+      description: `Interior Design  \n Project Discussion  \n Space Planning  \n Online Consultation`,
       cta: 'Buy Now',
       bgColor: false,
     },
@@ -17,8 +16,7 @@ const pricing = {
       title: 'Standard',
       price: 50,
       frequency: 'per month',
-      description:
-        'Color Analysis \n Space Planning Home Remodeling 3D Interior Model',
+      description: `Color Analysis  \n Space Planning  \n Home Remodeling  \n 3D Interior Model`,
       cta: 'Buy Now',
       bgColor: true,
     },
@@ -26,8 +24,8 @@ const pricing = {
       title: 'Premium',
       price: 80,
       frequency: 'per month',
-      description:
-        'Concept Development Decoration Services Interior Architecture Flooring Installation',
+      description: `Concept Development  \n Decoration
+      Services  \n Interior Architecture  \n Flooring Installation`,
       cta: 'Buy Now',
       bgColor: false,
     },
@@ -80,13 +78,13 @@ const Pricing = () => (
                 tier.bgColor ? 'border-white' : 'lineColor'
               }`}
             />
-            <p
-              className={`mt-6 font-medium leading-7 ${
+            <Markdown
+              className={`mt-6 mb-10 font-medium leading-7 ${
                 tier.bgColor ? 'text-white' : ''
               }`}
             >
               {tier.description}
-            </p>
+            </Markdown>
           </div>
           <a
             href="#"

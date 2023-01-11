@@ -1,4 +1,3 @@
-import react from 'react'
 import Heading from '../atoms/Heading'
 import Container from '../atoms/Container'
 import Image from 'next/image'
@@ -68,7 +67,7 @@ const Testimonials = () => (
         <>
           <div className="relative md:flex md:flex-col md:py-8 md:pl-0 rounded-br borderBottomRightNone lightWhiteBorder bg-white">
             <blockquote className="md:flex md:flex-grow md:flex-col">
-              <div className="flex justify-between">
+              <div className="md:flex justify-between">
                 <div className="relative pl-12 inline-flex flex-shrink-0 rounded-full border-2 border-white">
                   <Image
                     height={172}
