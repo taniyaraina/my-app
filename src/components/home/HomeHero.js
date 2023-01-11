@@ -6,7 +6,7 @@ const HomeHero = () => (
   <main className="lg:relative">
     <div className="mx-auto w-full max-w-7xl pt-10 pb-28 px-20 text-center lg:py-36 lg:text-left">
       <div className="lg:w-1/2 xl:pr-20">
-        <h1 className="text-7xl	font-normal tracking-normal text-gray-900 sm:text-5xl md:text-7xl lg:text-5xl xl:text-7xl">
+        <h1 className="min-[320px]:text-5xl text-7xl font-normal tracking-normal textSecondaryColor sm:text-5xl md:text-7xl lg:text-5xl xl:text-7xl">
           <span className="block xl:inline">We create your space better</span>{' '}
         </h1>
         <p className="mx-auto mt-8 max-w-0 text-base sm:text-xl md:mt-12 md:max-w-3xl">

@@ -62,7 +62,7 @@ const Testimonials = () => (
     <Heading textCenter>
       What <span className="colorPrimary">People Say</span>
     </Heading>
-    <div className="md:grid pt-20 md:grid-cols-2 md:gap-x-8">
+    <div className="md:grid pt-20 md:grid-cols-2 md:gap-x-8 space-y-10">
       {users.map((item) => (
         <>
           <div className="relative md:flex md:flex-col md:py-8 md:pl-0 rounded-br borderBottomRightNone lightWhiteBorder bg-white">

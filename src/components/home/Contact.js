@@ -5,7 +5,7 @@ import Button from '../atoms/Button'
 
 const ContactUs = () => (
   <Container>
-    <div className="columns-2">
+    <div className="lg:columns-2">
       <div className="text-center">
         <Heading>Do you have</Heading>
         <Heading textColor>any question?</Heading>
