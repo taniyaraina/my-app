@@ -62,7 +62,7 @@ const Testimonials = () => (
     <Heading textCenter>
       What <span className="colorPrimary">People Say</span>
     </Heading>
-    <div className="md:grid pt-20 md:grid-cols-2 md:gap-x-8 space-y-10">
+    <div className=" grid-cols-1 grid pt-20 md:grid-cols-2 md:gap-x-8 gap-y-10">
       {users.map((item) => (
         <>
           <div className="relative md:flex md:flex-col md:py-8 md:pl-0 rounded-br borderBottomRightNone lightWhiteBorder bg-white">
@@ -72,7 +72,7 @@ const Testimonials = () => (
                   <Image
                     height={172}
                     width={172}
-                    className="rounded-full h-44"
+                    className="rounded-full h-44 z-50"
                     src={item.image}
                     alt=""
                   />
@@ -87,7 +87,7 @@ const Testimonials = () => (
                       {item.role}
                     </div>
                   </div>
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 z-50">
                     {socials.map((i) => (
                       <a
                         key={i.name}
