@@ -2,7 +2,7 @@ import react, { Children } from 'react'
 
 const Button = ({ children, textAlign }) => (
   <div
-    className={`mt-12 borderColor sm:flex sm:justify-center ${
+    className={`mt-12 borderColor flex sm:justify-center justify-center ${
       textAlign ? 'lg:justify-start' : 'lg:justify-center'
     }`}
   >

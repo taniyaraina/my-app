@@ -35,7 +35,7 @@ const Services = () => (
     <Heading>
       Our <span className="colorPrimary">Services</span>
     </Heading>
-    <dl className="grid mt-16 grid-cols-1 gap-12 lg:grid lg:grid-cols-4">
+    <dl className="grid md:mt-16 grid-cols-1 gap-12 lg:grid lg:grid-cols-4">
       {features.map((feature) => (
         <div className="text-center" key={feature.name}>
           <dt className="flex flex-col">
